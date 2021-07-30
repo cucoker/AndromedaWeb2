@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Andromina.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -24,6 +25,10 @@ namespace AndromedaWeb2
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+
+            // CC Learn. Register Interface to class. Do not do this in production
+            services.AddSingleton<IEnergyPlanData, InMemoryEnergyPlanData > ();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,6 +45,8 @@ namespace AndromedaWeb2
                 app.UseHsts();
             }
 
+            
+            
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 

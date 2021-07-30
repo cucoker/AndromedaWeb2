@@ -1,0 +1,23 @@
+﻿@page
+@model AndromedaWeb2.Pages.EnergyPlans.ListModel
+@{
+    ViewData["Title"] = "List";
+}
+
+<h1>Energy Plans</h1>
+
+<table class="table">
+    @foreach (var EnergyPlan in Model.EnergyPlans)
+    {
+    <tr>
+        <td hidden>@EnergyPlan.EnergyPlanID</td>
+        <td>@EnergyPlan.PlanName</td>
+        <td>@EnergyPlan.PlanDuration</td>
+        <td>@EnergyPlan.Price</td>
+    </tr>
+    }
+</table>
+
+@*<h1>@Model.Message </h1>
+<h1>@Model.AppSettingMessage </h1>*@
+

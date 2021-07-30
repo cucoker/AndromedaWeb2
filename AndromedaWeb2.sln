@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndromedaWeb2", "AndromedaWeb2.csproj", "{669E4540-6C79-404B-AEB2-E36BD9D9B9EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AndromedaWeb2", "AndromedaWeb2.csproj", "{669E4540-6C79-404B-AEB2-E36BD9D9B9EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Andromeda.Core", "..\Andromeda.Core\Andromeda.Core.csproj", "{D37887F9-CA0A-46A5-83D5-83C5CC6399C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Andromina.Data", "..\Andromina.Data\Andromina.Data.csproj", "{A73DECF9-278D-4294-977F-81ABA1B19EC9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{669E4540-6C79-404B-AEB2-E36BD9D9B9EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{669E4540-6C79-404B-AEB2-E36BD9D9B9EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{669E4540-6C79-404B-AEB2-E36BD9D9B9EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D37887F9-CA0A-46A5-83D5-83C5CC6399C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D37887F9-CA0A-46A5-83D5-83C5CC6399C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D37887F9-CA0A-46A5-83D5-83C5CC6399C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D37887F9-CA0A-46A5-83D5-83C5CC6399C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A73DECF9-278D-4294-977F-81ABA1B19EC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A73DECF9-278D-4294-977F-81ABA1B19EC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A73DECF9-278D-4294-977F-81ABA1B19EC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A73DECF9-278D-4294-977F-81ABA1B19EC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
